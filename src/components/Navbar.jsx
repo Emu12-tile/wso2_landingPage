@@ -1,5 +1,6 @@
 // import {useState} from 'react'
 import logo from '../assets/logo.svg'
+import '../App.css'
 // import { MdLanguage } from "react-icons/md";
 // import { MdMenu } from "react-icons/md";
 // import { HiXMark } from "react-icons/hi2";
@@ -108,8 +109,8 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className=' text-black text-black hover:bg-gray-700 hover:text-white
-                          rounded-md px-3 py-2 text-sm font-semibold'
+                        className=' text-black text-black hover:bg-primary-line
+                           px-3 py-2  font-semibold'
                     
                       >
                         {item.name}
@@ -119,7 +120,7 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-             <button className='bg-secondary text-black font-semibold py-2 px-4 transition-all duration-300 rounded hover:text-white hover:bg-indigo-600' >Login/Sign up</button>
+             <button className='btnPrimary' >Login/Sign up</button>
 
 
                 {/* Profile dropdown */}

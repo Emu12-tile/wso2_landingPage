@@ -1,7 +1,8 @@
+import '../App.css'
 import banner from '../assets/black.png'
 import Banner from '../shared/Banner';
 import image1 from'../assets/about.jpg'
-import image2 from'../assets/removed.png'
+import image2 from'../assets/imagebg2.png'
 import image3 from'../assets/home.jpg'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
@@ -39,8 +40,10 @@ const Home=()=> {
 <div className='relative md:px-12 p-4 max-w-screen-2xl mx-auto  mt-24 overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 '>
   <div className='h-[700px] w-[700px] bg-[#00ADEF] absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]'></div>
   <div className='container pb-8 sm:pb-0'>
+    
     <div>
       <div className='grid grid-cols-1 sm:grid-cols-2 ' >
+        
       <motion.div 
                  variants={fadeIn("up",0.2)}
                  initial='hidden'
@@ -52,7 +55,7 @@ const Home=()=> {
 
           <p className='text-xl'>Join forces with us to unlock new possibilities, drive advancements, and create a collaborative tech ecosystem that propels both our ventures to new heights.</p>
           <div>
-          <button className='bg-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full'>Get Started</button>
+          <button className='btnPrimary'>Get Started</button>
         </div>
         </motion.div>
         <div className='order-1 sm:order-2'>
