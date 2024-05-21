@@ -100,7 +100,7 @@ export default function Example() {
                     src={logo}
                     alt="COOP Company"
                   />
-                  <span className='ml-2 text-bold text-2xl text-secondary'>Developers</span>
+                  <span className='ml-2 text-bold text-2xl text-secondary hidden sm:inline'>Developers</span>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -108,8 +108,8 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className=' text-black text-black hover:bg-gray-700 hover:text-white
-                          rounded-md px-3 py-2 text-sm font-semibold'
+                        className=' text-black text-black hover:bg-secondary hover:text-white
+                          rounded-md px-3 py-2  font-semibold'
                     
                       >
                         {item.name}

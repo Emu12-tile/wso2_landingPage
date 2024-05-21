@@ -1,7 +1,7 @@
 import banner from '../assets/black.png'
 import Banner from '../shared/Banner';
 import image1 from'../assets/about.jpg'
-import image2 from'../assets/removed.png'
+import image2 from'../assets/API1.png'
 import image3 from'../assets/home.jpg'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'

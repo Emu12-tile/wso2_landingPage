@@ -22,6 +22,9 @@ z-index:10001 !important;
 .btnPrimary{
   @apply py-3 px-8 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all duration-300;
 }
+.btnprimary{
+  @apply py-3 px-8 hover:rounded-full  font-semibold text-black rounded hover:bg-secondary transition-all duration-300;
+}
 @keyframes loop-scroll {
   0% {
     transform: translateX(0);
