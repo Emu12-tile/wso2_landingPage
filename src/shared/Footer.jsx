@@ -55,7 +55,7 @@ const Footer=()=> {
         </div>
         <hr/>
         <div className='flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8 '> 
-            <p>@ XYZ 20XX --- 20XX. All rights reserved.</p>
+            <p>Copyright © 2024 Cooperative Bank of Oromia. All Rights Reserved</p>
             <div className=' flex items-center space-x-5'>
                 <FaFacebook className='w-8 cu0rsor-pointer hover:-trans'/>
                 <FaInstagram className='w-8 cu0rsor-pointer hover:-trans'/>

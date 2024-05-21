@@ -8,6 +8,7 @@ import About from './components/About'
 import Pricing from './components/Pricing'
 import Newsletter from './components/Newsletter'
 import Footer from './shared/Footer'
+import Partners from './components/Partners'
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
      <Home/>
      <Features/>
      <About/>
-     <Pricing/>
-     <Newsletter/>
+     {/* <Pricing/> */}
+     {/* <Newsletter/> */}
+     <Partners/>
      <Footer/>
     </>
   )
