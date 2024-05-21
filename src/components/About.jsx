@@ -1,5 +1,3 @@
-// import aboutImg from '../assets/home.jpg'
-
 import aboutImg2 from '../assets/imagebg2.png'
 import {motion} from 'framer-motion'
 import { fadeIn } from "../variants"
