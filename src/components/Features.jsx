@@ -70,10 +70,10 @@ const Features = () => {
             <div className="text-center">
                 <h2 className="md:text-5xl text-3xl font-semibold text-black mt-14 mb-2">APIs built by developers, for developers</h2>
                 <p>Find the product that is right for you</p>
-                <div className="mt-16">
-                    <button onClick={() => handleCategoryChange('payments')} className="mr-8 text-2xl font-semibold ">Payments</button>
-                    <button onClick={() => handleCategoryChange('security')} className="ml-8 text-2xl font-semibold">Security</button>
-                    <button onClick={() => handleCategoryChange('data')} className="ml-8 text-2xl font-semibold">Data and Service</button>
+                <div className="mt-16 ">
+                    <button onClick={() => handleCategoryChange('payments')} className="mr-8 text-2xl font-semibold btnprimary ">Payments</button>
+                    <button onClick={() => handleCategoryChange('security')} className="ml-8 text-2xl font-semibold btnprimary">Security</button>
+                    <button onClick={() => handleCategoryChange('data')} className="ml-8 text-2xl font-semibold btnprimary">Data and Service</button>
                 </div>
             </div>
             <motion.div
