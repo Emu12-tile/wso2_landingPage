@@ -6,7 +6,11 @@ body{
   background-color: #4299e1;
   background-color: crgba(66,153,225,var(--bg-opacity));
 }
- 
+.img-size {
+  width: 100%;
+  height: 200px; /* or any desired height */
+  object-fit: cover;
+}
 
 nav{
 z-index:10001 !important;
@@ -17,4 +21,17 @@ z-index:10001 !important;
 }
 .btnPrimary{
   @apply py-3 px-8 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all duration-300;
+}
+@keyframes loop-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-loop-scroll {
+  display: flex;
+  animation: loop-scroll 20s linear infinite;
 }

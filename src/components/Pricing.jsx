@@ -35,9 +35,9 @@ const Pricing=()=> {
           whileInView='show'
           viewport={{once:false,amount:0.7}}
 
-        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
+        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto ">
             {
-                packages.map((pkg,index)=><div key={index} className="border py-10 md:px-6 px-4 rounded-lg shadow-3xl">
+                packages.map((pkg,index)=><div key={index} className="border  shadow-2xl hover:-translate-y-4 transition-all duration-300 cursor-pointer  py-10 md:px-6 px-4 rounded-lg shadow-3xl">
                     <h3 className="text-3xl font-bold text-center text-primary ">{pkg.name}</h3>
                     <p className="text-tartiary text-center mp-5">{pkg.description}</p>
                     <p className="mt-5 text-center text-secondary text-4xl font-bold">{isYearly?`${pkg.yearlyPrice}`:`${pkg.monthlyPrice}`}<span className="text-base text-tartiary font-medium">/{isYearly? 'year':'month'}</span></p>
