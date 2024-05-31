@@ -81,11 +81,11 @@ const Features = () => {
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: false, amount: 0.4}}
-                className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 mt-20 md:w-11/12 mx-auto"
+                className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 mt-20 md:w-5/12 mx-auto"
             >
                 {
                     selectedData.map((item, index) => (
-                        <div key={index} className="border shadow-2xl hover:-translate-y-4 transition-all duration-300 cursor-pointer py-10 md:px-6 px-4 rounded-lg shadow-3xl">
+                        <div key={index} className="border shadow-2xl hover:-translate-y-4 transition-all duration-300 cursor-pointer py-5 md:px-3 px-4 rounded-lg shadow-3xl">
                             <div>
                                 <img src={item.img} alt={item.title} className="image-size"/>
                                 <h5 className="text-2xl font-semibold text-primary px-5 text-center">{item.title}</h5>
