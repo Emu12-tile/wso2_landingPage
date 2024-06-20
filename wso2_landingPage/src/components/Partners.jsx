@@ -3,18 +3,40 @@ import tele from '../assets/telecom.png'
 import airlines from '../assets/airlines.png'
 import dstv from '../assets/dstv.png'
 import safaricom from '../assets/safaricom.png'
+import { useState, useEffect } from "react";
+import axios from 'axios';
+import { BASEURL } from '../config';
+
+
 const partners = [
 tele,airlines,dstv,safaricom
-//   "https://via.placeholder.com/150?text=Partner+Two",
-//   "https://via.placeholder.com/150?text=Partner+Three",
-//   "https://via.placeholder.com/150?text=Partner+Four",
-//   "https://via.placeholder.com/150?text=Partner+Five",
-//   "https://via.placeholder.com/150?text=Partner+Three",
-//   "https://via.placeholder.com/150?text=Partner+Four",
-//   "https://via.placeholder.com/150?text=Partner+Five"
 ];
 
+
+
 const Partners = () => {
+  const [partner, setPartner] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const partner = await axios.get(`${BASEURL}/api/int-partners?populate=*`);
+              setPartner(partner.data.data);
+              console.log(partner.data.data)
+          } catch (error) {
+              setError(error);
+          } finally {
+              setLoading(false);
+          }
+      };
+      fetchData();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+  
   return (
     <div id="partners" className="bg-[#f7f7f7]" >
       <div className="mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -29,13 +51,14 @@ const Partners = () => {
         <div className='overflow-hidden'>
           <div className="relative w-full">
             <div className="flex animate-loop-scroll">
-              {[...partners, ...partners].map((item, index) => (
+              {/* {[...partners, ...partners].map((item, index) => ( */}
+                  {[...partner,...partner]?.map((usage, index) => (
                 <div
                   key={index}
                   className="flex-shrink-0 bg-white w-[250px] h-[100px] p-5 flex items-center justify-center"
                 >
                   <img
-                    src={item}
+                    src={BASEURL + usage.attributes.partnerLogo.data.attributes.url}
                     alt={`Partner ${index + 1}`}
                     className="h-full w-auto"
                   />

@@ -3,12 +3,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import {FaYoutube} from "react-icons/fa";
 
 
 
 const Footer=()=> {
   return (
-    <div className="bg-[#00ADEF] md:px-14 p-4 max-w-screen-2x1 mx-auto text-white">
+    <div className="bg-[#00ADEF] md:px-14 p-4 max-w-screen-2x1 mx-auto text-white ">
         <div className='my-12 flex flex-col md:flex-row gap-10'>
             <div className='md:w-1/2 space-y-8'>
                 <a href="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
@@ -44,10 +45,10 @@ const Footer=()=> {
                 <div className='space-y-4 mt-5'>
                     <h4 className='text-xl'>Contacts</h4>
                     <ul className='space-y-3'>
-                        <a href="/" className='block hover:text-gray-300'>+251 92 917 2595</a>
-                        <a href="/" className='block hover:text-gray-300'>123 xyz xyz</a>
-                        <a href="/" className='block hover:text-gray-300'>emuaniley@gmail</a>
-                        <a href="/" className='block hover:text-gray-300'>10000</a>
+                        <a href="/" className='block hover:text-gray-300'>Phone: +251115150229</a>
+                        <a href="/" className='block hover:text-gray-300'>Fax: +251 11 515 0489</a>
+                        <a href="/" className='block hover:text-gray-300'>info@coopbankoromia.com.et</a>
+                        <a href="/" className='block hover:text-gray-300'>Swift code: CBORETAA</a>
                     </ul>
                     
                 </div>
@@ -57,11 +58,21 @@ const Footer=()=> {
         <div className='flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8 '> 
             <p>Copyright © 2024 Cooperative Bank of Oromia. All Rights Reserved | Designed by <span className='text-tartiary'> COOP DxValley</span> </p>
             <div className=' flex items-center space-x-5'>
-                <FaFacebook className='w-8 cu0rsor-pointer hover:-trans'/>
+            <a href="https://www.facebook.com/cooperativebankoforomia" target="_blank" rel="noopener noreferrer">
+                       <FaFacebook className='w-8 cu0rsor-pointer hover:-trans' />
+                         </a>
+                <a href="https://www.instagram.com/coop_bank/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className='w-8 cu0rsor-pointer hover:-trans'/>
+                </a>
+                <a href="https://www.youtube.com/c/CoopbankoromiaEthio/" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className='w-8 cu0rsor-pointer hover:-trans'/>
+                </a>
+                <a href="https://x.com/coopbankoromia/" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className='w-8 cu0rsor-pointer hover:-trans'/>
+                </a>
+                <a href="https://www.linkedin.com/company/cooperative-bank-of-oromia/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className='w-8 cu0rsor-pointer hover:-trans'/>
-
+                </a>
             </div>
         </div>
     </div>

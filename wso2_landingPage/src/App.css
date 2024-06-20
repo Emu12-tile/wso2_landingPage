@@ -38,3 +38,6 @@ z-index:10001 !important;
   display: flex;
   animation: loop-scroll 20s linear infinite;
 }
+.footer{
+  background-image:'assets/bg-logo.png' ;
+}

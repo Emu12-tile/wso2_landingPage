@@ -5,7 +5,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'APIS', href: '#', current: true },
+  { name: 'APIS', href: 'https://developer.coopbankoromiasc.com/devportal/apis', current: true },
   { name: 'Applications', href: '#', current: false },
   { name: 'Partners', href: '#', current: false },
 ]
@@ -59,7 +59,13 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-             <button className='btnPrimary' >Login/Sign up</button>
+              <a
+            className=" border border-gray-200s rounded-md px-5 py-2 btnPrimary"
+            href="https://developer.coopbankoromiasc.com/devportal/services/configs"
+          >
+            Login 
+          </a>
+             {/* <button className='btnPrimary' >Login</button> */}
 
               </div>
             </div>
