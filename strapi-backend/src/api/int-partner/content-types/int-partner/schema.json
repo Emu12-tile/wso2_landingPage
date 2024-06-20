@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "int_partners",
+  "info": {
+    "singularName": "int-partner",
+    "pluralName": "int-partners",
+    "displayName": "IntPartner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partnerLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

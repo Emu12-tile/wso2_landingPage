@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_api_developers",
+  "info": {
+    "displayName": "ApiDevelopers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}

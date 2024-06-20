@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "api_uses",
+  "info": {
+    "singularName": "api-use",
+    "pluralName": "api-uses",
+    "displayName": "ApiUse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "subTitle": {
+      "type": "string"
+    }
+  }
+}

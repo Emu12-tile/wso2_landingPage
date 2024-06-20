@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "api_developers",
+  "info": {
+    "singularName": "api-developer",
+    "pluralName": "api-developers",
+    "displayName": "ApiDeveloper",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ApiDevelopers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.cards"
+    }
+  }
+}

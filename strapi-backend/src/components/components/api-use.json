@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_api_uses",
+  "info": {
+    "displayName": "ApiUse"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "useContent": {
+      "displayName": "useContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.use-content"
+    }
+  }
+}
